@@ -127,6 +127,8 @@ const jQuery = require('jquery');
 
 
 
+        var sparkleContainer = document.querySelector('.view--layout') || document.body;
+
         $(newsprite).animate({
           opacity: [ fadetoOpacity, "swing" ],
           left : centerX + Math.random() * (radius + radius) -radius,
@@ -135,12 +137,12 @@ const jQuery = require('jquery');
           height: [0,"easeInQuart"]
         }, lifespan, 'easeOutQuad' ,function() {
 
-          document.body.removeChild(this)
+          sparkleContainer.removeChild(this)
 
 
         });
 
-        document.body.appendChild(newsprite);
+        sparkleContainer.appendChild(newsprite);
 
       }
 

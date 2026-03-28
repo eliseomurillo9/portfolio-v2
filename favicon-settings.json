@@ -1,0 +1,33 @@
+{
+  "icon": {
+    "desktop": {
+      "regularIconTransformation": {
+        "type": "background",
+        "backgroundColor": "#161B22",
+        "backgroundRadius": 0.7,
+        "imageScale": 0.7
+      },
+      "darkIconType": "regular",
+      "darkIconTransformation": {
+        "type": "none"
+      }
+    },
+    "touch": {
+      "transformation": {
+        "type": "none"
+      },
+      "appTitle": null
+    },
+    "webAppManifest": {
+      "transformation": {
+        "type": "none"
+      },
+      "backgroundColor": "#ffffff",
+      "name": "EliseoMurilloPort",
+      "shortName": "MySite",
+      "themeColor": "#ffffff"
+    }
+  },
+  "path": "/",
+  "skipMetadataInjection": false
+}
