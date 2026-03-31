@@ -345,9 +345,9 @@ textarea {
   justify-content: center;
   align-items: center;
 
-  max-width: 45%;
+  max-width: 55%;
   margin: auto;
-  padding: 1rem 0;
+  padding: 1rem
 }
 
 .view--container > h2, .view--container > p {
@@ -375,6 +375,11 @@ textarea {
   box-sizing: content-box;
 
   width: 90%;
+}
+
+.view--container > img {
+  width: 23%;
+  height: auto;
 }
 
 .console--container > .console--header {
@@ -477,7 +482,7 @@ textarea {
 .time-machine--container {
   position: fixed;
   bottom: 0.5rem;
-  right: 0.5rem;
+  right: -1rem;
   overflow: hidden;
 
   text-align: center;
@@ -487,7 +492,7 @@ textarea {
 
 
 .time-machine--container > img:not(.portefolio-img) {
-  width: 6rem;
+  width: 7rem;
   height: 6rem;
   object-fit: cover;
   object-position: top;
@@ -521,7 +526,7 @@ textarea {
   align-items: center;
   gap: 0.3rem;
   opacity: 0;
-
+  z-index: 5;
   color: #F0F6FC;
 }
 
@@ -530,6 +535,7 @@ textarea {
 }
 .time-machine--versions-container > .portefolio-img {
   width: 9rem;
+  height: auto;
 }
 
 .time-machine--versions-container--open {
@@ -556,6 +562,8 @@ textarea {
 
 .time-machine--call-to-action > img {
   object-fit: contain;
+  width: 4.5rem;
+  height: auto;
 }
 
 .time-machine--container-animation:hover {
@@ -606,7 +614,7 @@ textarea {
     transform: rotate(-0.04turn) scale(0.8);
   }
   66% {
-    transform: rotate(0.04turn) scale(1.3);
+    transform: rotate(0.04turn) scale(1.1);
   }
   100% {
     transform: rotate(0);
@@ -684,16 +692,18 @@ Tablet
 }
 
 @media (max-width: 768px) {
+
   .view--container > img {
-    width: 25%;
+    width: 10rem;
+    height: auto;
   }
 
   .view--container > h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .view--container > p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .console--container {
@@ -702,17 +712,8 @@ Tablet
 }
 
 @media (max-width: 640px) {
-
   .console--header > .console--header-actions, .console--header > h2 {
-    font-size: 0.7rem
-  }
-
-  .view--container > h2 {
-    font-size: 1.3rem;
-  }
-
-  .view--container > p {
-    font-size: 0.8rem;
+    font-size: 0.75rem
   }
 
   .view--container {
@@ -720,13 +721,17 @@ Tablet
   }
 
   .console--container > .console--body {
-    font-size: 0.6rem;
-    height: 13rem;
+    font-size: 0.75rem;
+    height: 15rem;
   }
 
-  .time-machine--container > img {
-    width: 3rem;
-    height: 3rem;
+  .time-machine--container {
+    right: 0.3rem;
+  }
+
+  .time-machine--container > img:not(.portefolio-img) {
+    width: 4rem;
+    height: 4rem;
   }
 
   .time-machine--call-to-action {
